@@ -1,5 +1,8 @@
 #!/bin/bash
-sudo ln -s /opt/VBoxGuestAdditions-4.3.20/lib/VBoxGuestAdditions /usr/lib/VBoxGuestAdditions
+sudo yum update -y
+sudo yum install gcc kernel-devel kernel-headers dkms make bzip2 perl
+yum install kernel-devel-2.6.32-431.3.1.e16.x86_64
+sudo ln -s /opt/VBoxGuestAdditions-4.3.10/lib/VBoxGuestAdditions /usr/lib/VBoxGuestAdditions
 # First we need to start by disabling the firewall. May not be needed for Vagrant
 # Anytime the system is restarted in the install process this need to be done.
 su
