@@ -29,7 +29,8 @@ yum -y install mercurial
 #Step 6 (This next line of code will be changed before Vagrant Project is finalized)
 #Download and install from Google Code the clone of the STOQS file.
 #older code before moving to gihub //hg clone https://code.google.com/p/stoqs/
-git clone https://github.com/stoqs/stoqs.git
+#git clone https://github.com/stoqs/stoqs.git #This will be done later
+git clone https://github.com/mamparo/stoqs.git
 chown postgres stoqs
 
 #Step 7
